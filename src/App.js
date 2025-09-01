@@ -23,7 +23,7 @@ function Pricing() {
   return (
     <section className="p-8 mt-20">
       <h2 className="text-3xl font-bold">Pricing Page</h2>
-      <p className="mt-2 text-gray-600">Here we’ll show our pricing tiers.</p>
+      <p className="mt-2 text-gray-600">Here we’ll show  pricing tiers.</p>
     </section>
   );
 }
@@ -33,7 +33,7 @@ function Features() {
   return (
     <section className="p-8 mt-20">
       <h2 className="text-3xl font-bold">Features Page</h2>
-      <p className="mt-2 text-gray-600">Cool things about our product.</p>
+      <p className="mt-2 text-gray-600">Cool things about product.</p>
     </section>
   );
 }
