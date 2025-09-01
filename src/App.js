@@ -6,7 +6,7 @@ import "./index.css";
 import Navbar from "@/components/Navbar";
 import { Button } from "@/components/ui/button";
 
-// ✅ Home Page
+// Home Page
 function Home() {
   return (
     <section className="flex flex-col items-center justify-center h-screen bg-gray-100 text-center">
@@ -17,7 +17,8 @@ function Home() {
   );
 }
 
-// ✅ Pricing Page
+
+// Pricing Page
 function Pricing() {
   return (
     <section className="p-8 mt-20">
@@ -27,7 +28,27 @@ function Pricing() {
   );
 }
 
-// ✅ Login Page
+// Features Page
+function Features() {
+  return (
+    <section className="p-8 mt-20">
+      <h2 className="text-3xl font-bold">Features Page</h2>
+      <p className="mt-2 text-gray-600">Cool things about our product.</p>
+    </section>
+  );
+}
+
+// Download Page
+function Download() {
+  return (
+    <section className="p-8 mt-20">
+      <h2 className="text-3xl font-bold">Download Page</h2>
+      <p className="mt-2 text-gray-600">Links or instructions for downloads.</p>
+    </section>
+  );
+}
+
+// Login Page
 function Login() {
   return (
     <section className="p-8 mt-20">
@@ -37,7 +58,7 @@ function Login() {
   );
 }
 
-// ✅ Signup Page
+// Signup Page
 function Signup() {
   return (
     <section className="p-8 mt-20">
@@ -47,7 +68,7 @@ function Signup() {
   );
 }
 
-// ✅ Footer
+// Footer
 function Footer() {
   return (
     <footer className="p-4 text-center bg-gray-200 mt-8">
@@ -56,20 +77,22 @@ function Footer() {
   );
 }
 
-// ✅ App (Router + Navbar + Pages + Footer)
+// App (Router + Navbar + Pages + Footer)
 function App() {
-  return (
+    return (
     <Router>
-      <Navbar />
-      <div className="pt-20">
+        <Navbar />
+        <div className="pt-20">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/pricing" element={<Pricing />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<Signup />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/pricing" element={<Pricing />} />
+            <Route path="/features" element={<Features />} />   {/* new */}
+            <Route path="/download" element={<Download />} />   {/* new */}
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
         </Routes>
-      </div>
-      <Footer />
+        </div>
+        <Footer />
     </Router>
   );
 }
